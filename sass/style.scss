@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/background-image.jpeg);
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h1 {
+    color: grey;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px black;
+}
+.serching-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+button {
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    color: #fff;
+    background-color: grey;
+    font-size: 24px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px black;
+    outline: none;
+
+    i.fas {
+        margin-right: 20px; 
+    }
+}
+input {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    font-family: 'Prompt', sans-serif;
+    font-style: italic;
+}
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    width: 100%;
+    
+    .heading-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        background-color: grey;
+        box-shadow: 2px 2px 8px black;
+        .flag-box {
+            width: 50px;
+            margin: 5px 15px;
+            box-shadow: 2px 2px 8px;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+        h2 {
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px black;
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 18px;
+        background-color: rgba(128, 128, 128, 0.4);
+        margin-bottom: 25px;
+        table-layout: fixed;
+        tr {
+            td {
+                padding: 5px 15px;
+                border: 1px solid grey;
+                word-wrap: break-word;
+                &.first-column {
+                    width: 45%;   
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .serching-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        button, input {
+            width: 48%;
+        }
+    }
+}

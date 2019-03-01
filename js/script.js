@@ -22,14 +22,20 @@ function showCountriesList(resp) {
     resp.forEach(function(item){
         var listElement = document.createElement('li');
         
+        var headingWrapper = document.createElement('div');
+        headingWrapper.classList.add('heading-wrapper');
+        
         var flagBox = document.createElement('div');
+        flagBox.classList.add('flag-box');
         var flagImage = document.createElement('img');
         flagBox.appendChild(flagImage);
-        listElement.appendChild(flagBox);
+
+        headingWrapper.appendChild(flagBox);
 
         var listElementHeading = document.createElement('h2');
         listElementHeading.innerText = item.name;
-        listElement.appendChild(listElementHeading);
+        headingWrapper.appendChild(listElementHeading);
+        listElement.appendChild(headingWrapper);
         
         var table = document.createElement('table');
         var countryInfo = {
@@ -45,6 +51,7 @@ function showCountriesList(resp) {
             var firstColumnData = document.createElement('td');
             firstColumnData.innerText = countryInfo[key][0];
             tableRow.appendChild(firstColumnData);
+            firstColumnData.classList.add('first-column');
 
             var secondColumnData = document.createElement('td');
             secondColumnData.innerText = countryInfo[key][1];
@@ -53,8 +60,6 @@ function showCountriesList(resp) {
             table.appendChild(tableRow);
         }
         listElement.appendChild(table);
-
-        // getting a flag
 
         fetch('https://restcountries.eu/rest/v2/alpha/' + item.alpha3Code)
             .then(function(flagResp) {

@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/background-image.jpeg);
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1 {
+  color: grey;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+}
+
+.serching-wrapper {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+button {
+  padding: 15px 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  color: #fff;
+  background-color: grey;
+  font-size: 24px;
+  font-family: 'Prompt', sans-serif;
+  cursor: pointer;
+  text-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px black;
+  outline: none;
+}
+
+button i.fas {
+  margin-right: 20px;
+}
+
+input {
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 15px;
+  font-size: 24px;
+  font-family: 'Prompt', sans-serif;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  width: 100%;
+}
+
+ul .heading-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  background-color: grey;
+  box-shadow: 2px 2px 8px black;
+}
+
+ul .heading-wrapper .flag-box {
+  width: 50px;
+  margin: 5px 15px;
+  box-shadow: 2px 2px 8px;
+}
+
+ul .heading-wrapper .flag-box img {
+  width: 100%;
+  display: block;
+}
+
+ul .heading-wrapper h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px black;
+}
+
+ul table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  background-color: rgba(128, 128, 128, 0.4);
+  margin-bottom: 25px;
+  table-layout: fixed;
+}
+
+ul table tr td {
+  padding: 5px 15px;
+  border: 1px solid grey;
+  word-wrap: break-word;
+}
+
+ul table tr td.first-column {
+  width: 45%;
+}
+
+@media (min-width: 768px) {
+  .serching-wrapper {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .serching-wrapper button, .serching-wrapper input {
+    width: 48%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -2,14 +2,21 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Country-search-engine</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Prompt:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<h1>Country search engine</h1>
-		<button id="search">Search a country</button>
-		<input id="country-name" type="text" />
-		<ul id="countries"></ul>
-	
+		<div class="container">
+			<h1>Country search engine</h1>
+			<div class="serching-wrapper">
+				<input id="country-name" type="text" placeholder="Poland"/>
+				<button id="search"><i class="fas fa-search"></i>Search a country</button>	
+			</div>
+			<ul id="countries"></ul>
+		</div>
 	<script  src="js/script.js"></script>    
 	</body>
 </html>
