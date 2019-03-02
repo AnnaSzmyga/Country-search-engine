@@ -32,7 +32,7 @@ h1 {
       flex-direction: column;
 }
 
-button {
+.serching-wrapper button {
   padding: 15px 30px;
   margin-bottom: 30px;
   width: 100%;
@@ -46,17 +46,28 @@ button {
   outline: none;
 }
 
-button i.fas {
+.serching-wrapper button .fas {
   margin-right: 20px;
 }
 
-input {
+.serching-wrapper input {
   margin-bottom: 30px;
   width: 100%;
   padding: 15px;
   font-size: 24px;
   font-family: 'Prompt', sans-serif;
   font-style: italic;
+}
+
+.alert {
+  display: none;
+  font-size: 36px;
+  color: #db1e37;
+  text-shadow: 1px 1px 5px black;
+}
+
+.alert.show {
+  display: inline;
 }
 
 ul {
@@ -93,6 +104,12 @@ ul .heading-wrapper h2 {
   color: #fff;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px black;
+}
+
+ul .heading-wrapper h2 span {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
 }
 
 ul table {
